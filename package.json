@@ -4,7 +4,7 @@
   "main": "app.mjs",
   "type": "module",
   "repository": "https://github.com/aisaki-tech/aisaki-node-ex-app.git",
-  "author": "y-ishii-code <yuya.ishii.engineer@gmail.com>",
+  "author": "aisaki-tech",
   "license": "MIT",
   "engines": {
     "node": "22.9.0",
@@ -13,6 +13,7 @@
   },
   "scripts": {
     "dev": "node --watch --env-file=.env server/app.mjs",
+    "start": "node server/app.mjs",
     "lint": "eslint && prettier --check --ignore-unknown .",
     "lint:fix": "eslint --fix && prettier --write --ignore-unknown .",
     "prepare": "husky"
