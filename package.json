@@ -6,11 +6,20 @@
   "repository": "https://github.com/aisaki-tech/aisaki-node-ex-app.git",
   "author": "y-ishii-code <yuya.ishii.engineer@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "22.9.0",
+    "npm": "use yarn instead",
+    "yarn": "4.5.0"
+  },
   "scripts": {
-    "dev": "node --watch server/app.js"
+    "dev": "node --watch server/app.js",
+    "lint": "eslint && prettier --check --ignore-unknown .",
+    "lint:fix": "eslint --fix && prettier --write --ignore-unknown .",
+    "prepare": "husky"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --write --ignore-unknown",
+    "**/*.{js,css,htm}": "eslint --fix"
   },
   "dependencies": {
     "express": "^4.21.0",
@@ -22,5 +31,6 @@
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3"
-  }
+  },
+  "packageManager": "yarn@4.5.0"
 }

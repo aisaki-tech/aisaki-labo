@@ -1,0 +1,17 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "htmlWhitespaceSensitivity": "ignore",
+  "trailingComma": "all",
+  "printWidth": 150,
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["**/*.css", "**/*.htm"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
