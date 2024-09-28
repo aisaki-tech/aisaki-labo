@@ -2,7 +2,10 @@ import eslintConfigPrettier from 'eslint-config-prettier' // Add
 
 export default [
   {
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    ignores: ['.yarn'],
+  },
+  {
+    files: ['**/*.{js,mjs,cjs,jsx}'],
   },
   eslintConfigPrettier,
 ]
