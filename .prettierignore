@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# devcontainer
+.devcontainer
+
+# vscode
+*.code-workspace

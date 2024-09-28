@@ -1,0 +1,26 @@
+{
+  "name": "aisaki-node-ex-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "repository": "https://github.com/aisaki-tech/aisaki-node-ex-app.git",
+  "author": "y-ishii-code <yuya.ishii.engineer@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node --watch server/app.js"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3"
+  }
+}
