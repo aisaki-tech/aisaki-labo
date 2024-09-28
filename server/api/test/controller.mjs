@@ -9,6 +9,16 @@ const getTest = async (req, res) => {
   res.send(JSON.stringify(response))
 }
 
+const postTest = async (req, res) => {
+  try {
+    await userModel.insertOne()
+    res.send(JSON.stringify({ status: 'success' }))
+  } catch (err) {
+    res.send(JSON.stringify({ status: 'error', cause: err.message }))
+  }
+}
+
 export const testController = {
   getTest,
+  postTest,
 }

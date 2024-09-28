@@ -5,6 +5,7 @@ import { testController } from '../api/index.mjs'
 const router = express.Router()
 
 router.get('/api/test', testController.getTest)
+router.post('/api/test', testController.postTest)
 
 // client配下は、ブラウザサイドで実行されるファイル（HTML/JS/CSS/画像など）を配置する
 router.use(express.static(`${path.resolve()}/client`))
