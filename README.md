@@ -1,1 +1,1 @@
-# aisaki-labo
+# aisaki-node-ex-app
