@@ -14,7 +14,7 @@ phases:
   build:
     commands:
       - echo ---- Start docker build ---
-      - docker build -t $REPOSITORY_URI:latest -f ./dockerfiles/Dockerfile .
+      - docker build -t $REPOSITORY_URI:latest -f ./docker/Dockerfile .
         --build-arg APP_ENV=$APP_ENV
         --build-arg BASE_URL=$BASE_URL
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
